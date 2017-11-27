@@ -13,7 +13,10 @@ import javax.validation.Valid;
 
 @Controller
 public class HomeController {
-
+    @RequestMapping("/")
+    public String index(){
+        return "index";
+    }
     @Autowired
     PostRepository postRepository;
 
